@@ -1,0 +1,114 @@
+2023-06-11T10:29:21.216+02:00  INFO 6004 --- [main] h.tvz.behin.studapp.Labos01Application   : Starting Labos01Application using Java 17 with PID 6004 (C:\Users\dell\Documents\Pripreme\target\classes started by dell in C:\Users\dell\Documents\Pripreme)
+2023-06-11T10:29:21.249+02:00  INFO 6004 --- [main] h.tvz.behin.studapp.Labos01Application   : No active profile set, falling back to 1 default profile: "default"
+2023-06-11T10:29:23.560+02:00  INFO 6004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-11T10:29:23.766+02:00  INFO 6004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186 ms. Found 2 JPA repository interfaces.
+2023-06-11T10:29:25.656+02:00  INFO 6004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-11T10:29:25.688+02:00  INFO 6004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-11T10:29:25.690+02:00  INFO 6004 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-06-11T10:29:25.944+02:00  INFO 6004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-11T10:29:25.945+02:00  INFO 6004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4480 ms
+2023-06-11T10:29:26.015+02:00  INFO 6004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-11T10:29:26.499+02:00  INFO 6004 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:StudentDB user=STUDENT
+2023-06-11T10:29:26.503+02:00  INFO 6004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-11T10:29:26.520+02:00  INFO 6004 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:StudentDB'
+2023-06-11T10:29:27.040+02:00  INFO 6004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-11T10:29:27.170+02:00  INFO 6004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-11T10:29:27.968+02:00  INFO 6004 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-11T10:29:28.941+02:00  WARN 6004 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): hr.tvz.behin.studapp.domain.CourseStudent
+2023-06-11T10:29:28.942+02:00  WARN 6004 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): hr.tvz.behin.studapp.domain.CourseStudent
+2023-06-11T10:29:30.168+02:00  INFO 6004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-11T10:29:30.207+02:00  INFO 6004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11T10:29:31.607+02:00  WARN 6004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11T10:29:31.967+02:00 DEBUG 6004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2023-06-11T10:29:32.083+02:00 DEBUG 6004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-06-11T10:29:32.161+02:00  INFO 6004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@360432d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c2a7c73, org.springframework.security.web.context.SecurityContextHolderFilter@7d0e46dd, org.springframework.security.web.header.HeaderWriterFilter@cd9ce76, org.springframework.security.web.authentication.logout.LogoutFilter@145ce025, hr.tvz.behin.studapp.security.jwt.JwtFilter@2eb60c71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cd6fae8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d5ddfac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ade99bb, org.springframework.security.web.session.SessionManagementFilter@444720b7, org.springframework.security.web.access.ExceptionTranslationFilter@7104b117, org.springframework.security.web.access.intercept.AuthorizationFilter@6c96dc5c]
+2023-06-11T10:29:32.193+02:00  WARN 6004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-11T10:29:32.196+02:00  INFO 6004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/**', OPTIONS]
+2023-06-11T10:29:32.198+02:00  WARN 6004 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-11T10:29:32.200+02:00  INFO 6004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/h2-console/**']
+2023-06-11T10:29:32.385+02:00 DEBUG 6004 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-11T10:29:32.532+02:00 DEBUG 6004 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-11T10:29:32.835+02:00  INFO 6004 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-06-11T10:29:32.853+02:00  INFO 6004 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-06-11T10:29:32.854+02:00  INFO 6004 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2023-06-11T10:29:32.856+02:00  INFO 6004 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-06-11T10:29:32.857+02:00  INFO 6004 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-06-11T10:29:32.858+02:00  INFO 6004 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-06-11T10:29:32.858+02:00  INFO 6004 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2023-06-11T10:29:32.861+02:00  INFO 6004 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3ce4b0a8
+2023-06-11T10:29:32.989+02:00  INFO 6004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-11T10:29:32.992+02:00  INFO 6004 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-06-11T10:29:32.992+02:00  INFO 6004 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-11T10:29:33.010+02:00  INFO 6004 --- [main] h.tvz.behin.studapp.Labos01Application   : Started Labos01Application in 13.127 seconds (process running for 16.284)
+2023-06-11T10:30:02.230+02:00  INFO 6004 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-11T10:30:02.301+02:00  INFO 6004 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-06-11T10:30:02.301+02:00  INFO 6004 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-06-11T10:30:02.302+02:00  INFO 6004 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-11T10:30:02.302+02:00  INFO 6004 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-06-11T10:30:02.308+02:00  INFO 6004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11T10:30:02.318+02:00  INFO 6004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-11T10:30:02.322+02:00  INFO 6004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-11T10:30:44.005+02:00  INFO 19276 --- [main] h.tvz.behin.studapp.Labos01Application   : Starting Labos01Application using Java 17 with PID 19276 (C:\Users\dell\Documents\Pripreme\target\classes started by dell in C:\Users\dell\Documents\Pripreme)
+2023-06-11T10:30:44.014+02:00  INFO 19276 --- [main] h.tvz.behin.studapp.Labos01Application   : No active profile set, falling back to 1 default profile: "default"
+2023-06-11T10:30:46.010+02:00  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-11T10:30:46.166+02:00  INFO 19276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+2023-06-11T10:30:47.438+02:00  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-11T10:30:47.461+02:00  INFO 19276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-11T10:30:47.462+02:00  INFO 19276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-06-11T10:30:47.684+02:00  INFO 19276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-11T10:30:47.685+02:00  INFO 19276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3511 ms
+2023-06-11T10:30:47.741+02:00  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-11T10:30:48.114+02:00  INFO 19276 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:StudentDB user=STUDENT
+2023-06-11T10:30:48.117+02:00  INFO 19276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-11T10:30:48.135+02:00  INFO 19276 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:StudentDB'
+2023-06-11T10:30:48.612+02:00  INFO 19276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-11T10:30:48.723+02:00  INFO 19276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-11T10:30:49.339+02:00  INFO 19276 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-11T10:30:50.108+02:00  WARN 19276 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): hr.tvz.behin.studapp.domain.CourseStudent
+2023-06-11T10:30:50.108+02:00  WARN 19276 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): hr.tvz.behin.studapp.domain.CourseStudent
+2023-06-11T10:30:51.226+02:00  INFO 19276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-11T10:30:51.246+02:00  INFO 19276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11T10:30:52.623+02:00  WARN 19276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11T10:30:53.004+02:00 DEBUG 19276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2023-06-11T10:30:53.098+02:00 DEBUG 19276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-06-11T10:30:53.172+02:00  INFO 19276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6527f68a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@741687d4, org.springframework.security.web.context.SecurityContextHolderFilter@18edbed9, org.springframework.security.web.header.HeaderWriterFilter@70313b0b, org.springframework.security.web.authentication.logout.LogoutFilter@360432d3, hr.tvz.behin.studapp.security.jwt.JwtFilter@1578b8ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75f316df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d4aadc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77b0ff24, org.springframework.security.web.session.SessionManagementFilter@76e4df53, org.springframework.security.web.access.ExceptionTranslationFilter@7fecc26f, org.springframework.security.web.access.intercept.AuthorizationFilter@5e89e527]
+2023-06-11T10:30:53.178+02:00  WARN 19276 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-11T10:30:53.178+02:00  INFO 19276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/**', OPTIONS]
+2023-06-11T10:30:53.179+02:00  WARN 19276 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/h2-console/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-11T10:30:53.179+02:00  INFO 19276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/h2-console/**']
+2023-06-11T10:30:53.362+02:00 DEBUG 19276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-06-11T10:30:53.440+02:00 DEBUG 19276 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-06-11T10:30:53.677+02:00  INFO 19276 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2023-06-11T10:30:53.695+02:00  INFO 19276 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-06-11T10:30:53.696+02:00  INFO 19276 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2023-06-11T10:30:53.697+02:00  INFO 19276 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2023-06-11T10:30:53.698+02:00  INFO 19276 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-06-11T10:30:53.699+02:00  INFO 19276 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-06-11T10:30:53.699+02:00  INFO 19276 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2023-06-11T10:30:53.700+02:00  INFO 19276 --- [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5a740449
+2023-06-11T10:30:53.823+02:00  INFO 19276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-11T10:30:53.825+02:00  INFO 19276 --- [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2023-06-11T10:30:53.826+02:00  INFO 19276 --- [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-06-11T10:30:53.845+02:00  INFO 19276 --- [main] h.tvz.behin.studapp.Labos01Application   : Started Labos01Application in 10.969 seconds (process running for 12.884)
+2023-06-11T10:31:01.980+02:00  INFO 19276 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-11T10:31:02.017+02:00  INFO 19276 --- [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2023-06-11T10:31:02.017+02:00  INFO 19276 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-06-11T10:31:02.017+02:00  INFO 19276 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-06-11T10:31:02.018+02:00  INFO 19276 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-06-11T10:31:02.021+02:00  INFO 19276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11T10:31:02.025+02:00  INFO 19276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-11T10:31:02.028+02:00  INFO 19276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
